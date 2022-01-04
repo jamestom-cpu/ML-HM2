@@ -9,7 +9,7 @@ class model:
         self.model = tf.keras.models.load_model(os.path.join(path, 'SubmissionModel'))
         self.scaler_dir = 'vars/scalers'
         self.scaler = joblib.load(os.path.join(path, 'vars/scalers', 'min_max_scaler.gz'))
-        self.window = 200
+        self.window = 300
         self.telescope = 72
         self.reg_telescope = 864
 
